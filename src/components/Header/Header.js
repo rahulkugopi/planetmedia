@@ -45,11 +45,11 @@ function Header() {
         </div>
 
         <div className={`${styles.nav} w-full flex-grow lg:flex lg:items-center lg:w-auto ${navShow == true ? 'block' : 'hidden'}`}>
-          <div className="text-md lg:flex-grow flex justify-end">
-            <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 font-normal text-black mr-8 uppercase">
+          <div className="text-md lg:flex-grow flex justify-end gap-5">
+            <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 font-normal text-black uppercase">
               Home
             </Link>
-            <Link to="/blog" className={`${styles.active} block mt-4 lg:inline-block lg:mt-0 font-normal mr-8 uppercase`}>
+            <Link to="/blog" className={`${styles.active} block mt-4 lg:inline-block lg:mt-0 font-normal uppercase`}>
               Blog
             </Link>
           </div>
