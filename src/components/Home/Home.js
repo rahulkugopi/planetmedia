@@ -23,7 +23,7 @@ function Home() {
                         <h1 className='uppercase'><span>Popular Stories</span></h1>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 gap-6 pt-10 pb-0">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-0">
                         <div className={styles.grid}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgOne} className='object-fill' />
@@ -70,7 +70,7 @@ function Home() {
 
                 <div className={styles.viewSection}>
                     <div className={`${styles.stories} border-none`}>
-                        <div className="grid lg:grid-cols-3 gap-6 pt-0 pl-10 pr-10">
+                        <div className="grid lg:grid-cols-3 gap-6 pt-0 pl-0 pr-0">
                             <div className={`${styles.grid} lg:col-span-2`}>
                                 <div className={`${styles.gridTopImg}`}>
                                     <img src={bannerOne} className='object-fill' />
@@ -100,7 +100,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
+                        <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-0 pr-0">
                             <div className={`${styles.grid} col-span-2`}>
                                 <div className={`${styles.gridTopImg}`}>
                                     <img src={bannerTwo} className='object-fill' />
@@ -116,7 +116,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
+                        <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-0 pr-0">
                             <div className={`${styles.grid} col-span-2`}>
                                 <div className={`${styles.gridTopImg}`}>
                                     <img src={bannerThree} className='object-fill' />

@@ -31,7 +31,7 @@ function Footer() {
           </svg>
         </div>
 
-        <div className={`${styles.footerLinks} flex mt-10 pt-7 pb-7 justify-center gap-10`}>
+        <div className={`${styles.footerLinks} flex mt-10 pt-7 pb-7 flex-col lg:flex-row text-center lg:text-start justify-center gap-5 lg:gap-10`}>
           <Link to='/' className='uppercase'>About Me</Link>
           <Link to='/' className='uppercase'>contact Me</Link>
           <Link to='/' className='uppercase'>Advertsing</Link>
