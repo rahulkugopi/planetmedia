@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Banner from './Banner/Banner';
 import styles from '../../styles/Home/Home.module.scss';
 import PopularImgOne from '../../assests/images/img-11.svg';
@@ -13,6 +14,13 @@ import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutl
 import Gallery from '../Gallery/Gallery';
 
 function Home() {
+
+    const navigate = useNavigate();
+
+    const handleReadMore = (evt) => {
+        navigate(`/blog-details/${evt}`);
+    }
+
     return (
         <div data-testid='Home' className={styles.Home}>
             <Banner />
@@ -24,7 +32,7 @@ function Home() {
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-0">
-                        <div className={styles.grid}>
+                        <div className={`${styles.grid} cursor-pointer`} onClick={e => handleReadMore(1)}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgOne} className='object-fill' />
                             </div>
@@ -38,7 +46,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className={styles.grid}>
+                        <div className={`${styles.grid} cursor-pointer`} onClick={e => handleReadMore(2)}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgTwo} className='object-fill' />
                             </div>
@@ -52,7 +60,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className={styles.grid}>
+                        <div className={`${styles.grid} cursor-pointer`} onClick={e => handleReadMore(3)}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgThree} className='object-fill' />
                             </div>

@@ -75,7 +75,7 @@ function BlogDetails() {
                   <div className="grid lg:grid-cols-5 gap-6 pt-10">
                     <div className='flex items-center'>
                       <svg width="73" height="51" viewBox="0 0 73 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.1025 1.96785C14.9827 9.01929 12.5399 20.1704 15.3084 20.4984C18.8912 20.8264 22.6368 21.9743 25.5682 24.7621C31.5937 30.6656 31.5937 40.5048 25.731 46.5723C19.8683 52.4759 10.0971 52.4759 4.2344 46.5723C-4.88538 37.2251 2.76872 20.9904 8.14287 12.955C10.4228 9.51125 14.9827 4.26367 22.6368 0L24.1025 1.96785ZM66.9329 1.96785C57.976 9.01929 55.3703 20.1704 58.1388 20.4984C61.8844 20.8264 65.4672 21.9743 68.3986 24.7621C74.4241 30.6656 74.587 40.5048 68.5614 46.5723C62.6987 52.4759 53.0904 52.4759 47.2276 46.5723C37.945 37.2251 45.762 20.9904 50.9733 12.955C53.4161 9.51125 57.976 4.26367 65.4672 0L66.9329 1.96785Z" fill="#A4BC96" fill-opacity="0.55" />
+                        <path d="M24.1025 1.96785C14.9827 9.01929 12.5399 20.1704 15.3084 20.4984C18.8912 20.8264 22.6368 21.9743 25.5682 24.7621C31.5937 30.6656 31.5937 40.5048 25.731 46.5723C19.8683 52.4759 10.0971 52.4759 4.2344 46.5723C-4.88538 37.2251 2.76872 20.9904 8.14287 12.955C10.4228 9.51125 14.9827 4.26367 22.6368 0L24.1025 1.96785ZM66.9329 1.96785C57.976 9.01929 55.3703 20.1704 58.1388 20.4984C61.8844 20.8264 65.4672 21.9743 68.3986 24.7621C74.4241 30.6656 74.587 40.5048 68.5614 46.5723C62.6987 52.4759 53.0904 52.4759 47.2276 46.5723C37.945 37.2251 45.762 20.9904 50.9733 12.955C53.4161 9.51125 57.976 4.26367 65.4672 0L66.9329 1.96785Z" fill="#A4BC96" fillOpacity="0.55" />
                       </svg>
                     </div>
 
@@ -97,7 +97,7 @@ function BlogDetails() {
                       <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover' />
                     </div>
 
-                    <div className={`${styles.imgThumbView}`}>
+                    <div className={`${styles.imgThumbView} lg:imgThumbViewAlign`}>
                       <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover' />
                     </div>
                   </div>
@@ -181,7 +181,7 @@ function BlogDetails() {
 
                 <div className={styles.popularPosts}>
                   <div className={`${styles.SubHeader}`}>
-                    <h2>Popular Posts</h2>
+                    <h2><span>Popular Posts</span></h2>
                   </div>
 
                   <div className={`${styles.sidePostView} grid lg:grid-cols-4 gap-6 pt-8`}>
@@ -221,7 +221,7 @@ function BlogDetails() {
 
                 <div className={styles.popularPosts}>
                   <div className={`${styles.SubHeader}`}>
-                    <h2>Categories</h2>
+                    <h2><span>Categories</span></h2>
                   </div>
 
                   <div className={`${styles.sidePostView} grid sm:grid-cols-2 lg:grid-cols-2 gap-6 pt-8`}>
@@ -249,19 +249,19 @@ function BlogDetails() {
 
                 <div className={styles.popularPosts}>
                   <div className={`${styles.SubHeader}`}>
-                    <h2>Tags</h2>
+                    <h2><span>Tags</span></h2>
                   </div>
 
                   <div className={`${styles.sidePostView} ${styles.tags} mt-8`}>
                     <div className='flex gap-4'>
-                      <span>Art & Design</span>
-                      <span>Interior</span>
-                      <span>Modern</span>
+                      <span className='flex justify-center items-center'>Art & Design</span>
+                      <span className='flex justify-center items-center'>Interior</span>
+                      <span className='flex justify-center items-center'>Modern</span>
                     </div>
                     <div className='flex gap-4 mt-4'>
-                      <span>Travel</span>
-                      <span>Home decor</span>
-                      <span>Fashion</span>
+                      <span className='flex justify-center items-center'>Travel</span>
+                      <span className='flex justify-center items-center'>Home decor</span>
+                      <span className='flex justify-center items-center'>Fashion</span>
                     </div>
                   </div>
                 </div>

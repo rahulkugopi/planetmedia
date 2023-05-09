@@ -29,13 +29,11 @@ function BlogTileView(props) {
   return (
     <div data-testid='BlogTileView' className={styles.BlogTileView}>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-16 pl-10 pr-10">
-
-
         {
           blogData.map((res, index) => (
-            <div className={styles.grid} key={index} onClick={e => handleReadMore(index)}>
-              <div className={`${styles.gridTopImg} lg:h-h-300 flex align-middle justify-center cursor-pointer`}>
-                <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${index}`} className='object-fill' />
+            <div className={styles.grid} key={index} onClick={e => handleReadMore(index+1)}>
+              <div className={`${styles.gridTopImg} lg:h-h-300 sm:h-h-200 flex align-middle justify-center cursor-pointer`}>
+                <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${index+1}`} className='object-fill' />
               </div>
 
               <div className='pt-5 pb-5 pl-5 pr-5'>
