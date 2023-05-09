@@ -1,18 +1,94 @@
 .Banner {
     width: 100%;
+    position: relative;
 
     .BannerLeft {
         width: 100%;
         height: 100vh;
+        background-image: url(../../assests/images/banner.svg);
+
+        .logo{
+            width: 150px;
+            height: 70px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .socialSection{
+            span{
+                width: 35px;
+                height: 35px;
+            }
+        }
+        
     }
 
     .BannerRight {
         width: 100%;
         height: 100vh;
+        background: #F8F7F5;
 
-        h2{
+        .topNav {
+            a {
+                color: #1B1B1B;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        h2 {
             font-size: 60px;
             line-height: 97%;
+        }
+
+        h3 {
+            color: #94939D;
+            letter-spacing: 0.06em;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 135%;
+        }
+
+        p {
+            font-family: 'Overpass';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 165%;
+            color: #343434;
+        }
+
+        .readMore {
+
+            a {
+                font-family: 'Overpass';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 165%;
+                letter-spacing: 0.13em;
+                text-transform: uppercase;
+                color: #606D59;
+            }
+        }
+
+        .bottomThumbImg {
+            width: 55%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            img {
+                border: solid 4px #fff;
+                border-bottom: 0;
+                border-left: 0;
+            }
         }
     }
 }

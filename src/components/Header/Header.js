@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import LoginIcon from '@mui/icons-material/Login';
 import CloseIcon from '@mui/icons-material/Close';
+import logo from '../../assests/images/logo.svg';
 
 function Header() {
 
@@ -19,7 +20,12 @@ function Header() {
 
   return (
     <div data-testid='header'>
-      <nav className="flex items-center justify-between flex-wrap bg-black lg:bg-black/[.60] p-5 lg:pl-10 lg:pr-10">        
+      <nav className="flex items-center justify-between flex-wrap p-5 lg:pl-10 lg:pr-10">
+        <div className="flex items-center flex-shrink-0 mr-6">
+          <Link to='/'>
+            <img src={logo} />
+          </Link>
+        </div>
         <div className="block lg:hidden">
           {
             navShow == false ?
@@ -39,15 +45,15 @@ function Header() {
         </div>
 
         <div className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${navShow == true ? 'block' : 'hidden'}`}>
-          <div className="text-md lg:flex-grow justify-end">
-            <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 font-medium text-white mr-8 uppercase">
+          <div className="text-md lg:flex-grow flex justify-end">
+            <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 font-normal text-black mr-8 uppercase">
               Home
-            </Link>            
-            <Link to="/blog" className="block mt-4 lg:inline-block lg:mt-0 font-medium text-white mr-8 uppercase">
+            </Link>
+            <Link to="/blog" className="block mt-4 lg:inline-block lg:mt-0 font-normal text-extra-color mr-8 uppercase">
               Blog
-            </Link>            
+            </Link>
           </div>
-         
+
         </div>
       </nav>
     </div>

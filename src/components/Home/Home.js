@@ -21,8 +21,8 @@ function Home() {
 
             <div className='container mx-auto'>
                 <div className={styles.stories}>
-                    <div className='pt-0'>
-                        <h1 className='uppercase'>Popular Stories </h1>
+                    <div className={`${styles.hdr} flex justify-center`}>
+                        <h1 className='uppercase'><span>Popular Stories</span></h1>
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
