@@ -24,7 +24,7 @@
     }
 
     .imgThumbViewAlign{
-        height: 450px;
+        max-height: 450px;
     }
 
     .blog-header{

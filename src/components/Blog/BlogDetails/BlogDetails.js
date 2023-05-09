@@ -149,7 +149,7 @@ function BlogDetails() {
                           <img src={User} />
                         </div>
 
-                        <div className='lg:col-span-4 flex flex-col items-center'>
+                        <div className='lg:col-span-4 flex flex-col items-center lg:items-start'>
                           <h2 className='mt-0 font-serif text-xl'>Emma Jacson</h2>
                           <h3 className='uppercase text-gray mt-1'>Blogger</h3>
                           <p className='mt-5'>Hello, I am in his into a horrible lay on his armour-like back horrible vermin. He lay on his armour</p>
