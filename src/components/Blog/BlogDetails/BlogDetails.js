@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/BlogDetails/BlogDetails.module.scss';
 import Header from '../../Header/Header';
 import Banner from '../../../assests/images/banner-5.svg';
@@ -17,38 +17,52 @@ import CategoryImgOne from '../../../assests/images/img-15.svg';
 import CategoryImgTwo from '../../../assests/images/img-16.svg';
 import CategoryImgThree from '../../../assests/images/img-17.svg';
 import CategoryImgFour from '../../../assests/images/img-18.svg';
+import api from '../../../constants/Api';
 
 function BlogDetails() {
 
   const { id } = useParams();
+
+  const [blogData, setBlogData] = useState([]);
+
+  useEffect(() => {
+    featchData();
+  }, []);
+
+  const featchData = () => {
+    api.get(`posts/${id}`).then((res) => setBlogData(res.data))
+      .catch(error => {
+        console.log(error);
+      });
+  }
 
   return (
     <div data-testid='BlogDetails' className={styles.BlogDetails}>
       <Header />
 
       <div className='pl-10 pr-10'>
-        <div className={styles.bannerSection}>
+        <div className={`${styles.bannerSection} lg:h-460 h-auto`}>
           <img src={Banner} className='object-fill' />
         </div>
 
         <div className='container mx-auto'>
-          <div className={styles.BlogContent}>
-            <div className='text-center bg-white pt-14'>
+          <div className={`${styles.BlogContent} lg:hdrAlign`}>
+            <div className='text-center bg-white pt-10 lg:pt-14'>
               <div className={styles.header}>
                 <h2 className='uppercase'>My Blog</h2>
               </div>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-6 pt-20 pl-10 pr-10">
-              <div className={`${styles.grid} col-span-2`}>
+            <div className="grid lg:grid-cols-3 gap-6 pt-20 pl-0 pr-0 lg:pl-10 lg:pr-10">
+              <div className={`${styles.grid} lg:col-span-2`}>
                 <div className={styles.topHeader}>
                   <h3>Lifestyle</h3>
-                  <h2 className='mt-4'>Minstry are many variations of passages available not the majority</h2>
+                  <h2 className='mt-4'>{blogData.title}</h2>
                   <p className='mt-4'>By Emma Jacson / 02 May 2021</p>
                 </div>
 
                 <div className={styles.contentMain}>
-                  <div className={`${styles.imgView} pt-10`}>
+                  <div className={`${styles.imgView} lg:h-360 pt-10  flex justify-center`}>
                     <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover' />
                   </div>
 
@@ -78,8 +92,8 @@ function BlogDetails() {
                     <p className='mt-2'>Dorizon the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable</p>
                   </div>
 
-                  <div className="grid lg:grid-cols-2 gap-6 pt-10">
-                    <div className={`${styles.imgThumbView}`}>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 pt-10">
+                    <div className={`${styles.imgThumbView} lg:imgThumbViewAlign`}>
                       <img src={`${process.env.REACT_APP_IMG_URL}/?office&€${id}`} className='object-cover' />
                     </div>
 
@@ -131,11 +145,11 @@ function BlogDetails() {
                   <div className={styles.subSection}>
                     <div className={`${styles.userView} flex justify-center mt-12 flex-col flex-wrap`}>
                       <div className="grid lg:grid-cols-5 gap-6">
-                        <div className='flex items-center'>
+                        <div className='flex items-center w-full justify-center'>
                           <img src={User} />
                         </div>
 
-                        <div className='col-span-4'>
+                        <div className='lg:col-span-4 flex flex-col items-center'>
                           <h2 className='mt-0 font-serif text-xl'>Emma Jacson</h2>
                           <h3 className='uppercase text-gray mt-1'>Blogger</h3>
                           <p className='mt-5'>Hello, I am in his into a horrible lay on his armour-like back horrible vermin. He lay on his armour</p>
@@ -145,12 +159,12 @@ function BlogDetails() {
                   </div>
 
                   <div className={`${styles.BtnView} grid lg:grid-cols-2 gap-6 pt-12 `}>
-                    <div className='text-left'>
+                    <div className='lg:text-left'>
                       <p>Previous post</p>
                       <h2>Describable forms of the insects</h2>
                     </div>
 
-                    <div className='text-right'>
+                    <div className='lg:text-right'>
                       <p>Next post</p>
                       <h2>Noticed by me when hear buzz</h2>
                     </div>
@@ -174,7 +188,7 @@ function BlogDetails() {
                     <div className={styles.thumbImage}>
                       <img src={ThumbImageOne} className='object-fill' />
                     </div>
-                    <div className='col-span-3 flex flex-col justify-center'>
+                    <div className='lg:col-span-3 flex flex-col justify-center'>
                       <h2>Meridian sun strikes the upper surface of the impenetrable</h2>
                       <p>02 May 2021</p>
                     </div>
@@ -184,7 +198,7 @@ function BlogDetails() {
                     <div className={styles.thumbImage}>
                       <img src={ThumbImageTwo} className='object-fill' />
                     </div>
-                    <div className='col-span-3 flex flex-col justify-center'>
+                    <div className='lg:col-span-3 flex flex-col justify-center'>
                       <h2>Meridian sun strikes the upper surface of the impenetrable</h2>
                       <p>02 May 2021</p>
                     </div>
@@ -194,14 +208,14 @@ function BlogDetails() {
                     <div className={styles.thumbImage}>
                       <img src={ThumbImageThree} className='object-fill' />
                     </div>
-                    <div className='col-span-3 flex flex-col justify-center'>
+                    <div className='lg:col-span-3 flex flex-col justify-center'>
                       <h2>Meridian sun strikes the upper surface of the impenetrable</h2>
                       <p>02 May 2021</p>
                     </div>
                   </div>
                 </div>
 
-                <div className='mt-20'>
+                <div className='mt-20 flex justify-center'>
                   <img src={SideImg} />
                 </div>
 
@@ -210,23 +224,23 @@ function BlogDetails() {
                     <h2>Categories</h2>
                   </div>
 
-                  <div className={`${styles.sidePostView} grid lg:grid-cols-2 gap-6 pt-8`}>
-                    <div className={styles.CategorySection}>
+                  <div className={`${styles.sidePostView} grid sm:grid-cols-2 lg:grid-cols-2 gap-6 pt-8`}>
+                    <div className={`${styles.CategorySection} flex justify-center flex-col lg:justify-normal`}>
                       <img src={CategoryImgOne} />
                       <h3 className='pt-5 text-center'>Lifestyle</h3>
                     </div>
 
-                    <div className={styles.CategorySection}>
+                    <div className={`${styles.CategorySection} flex justify-center flex-col lg:justify-normal`}>
                       <img src={CategoryImgTwo} />
                       <h3 className='pt-5 text-center'>Lifestyle</h3>
                     </div>
 
-                    <div className={styles.CategorySection}>
+                    <div className={`${styles.CategorySection} flex justify-center flex-col lg:justify-normal`}>
                       <img src={CategoryImgThree} />
                       <h3 className='pt-5 text-center'>Lifestyle</h3>
                     </div>
 
-                    <div className={styles.CategorySection}>
+                    <div className={`${styles.CategorySection} flex justify-center flex-col lg:justify-normal`}>
                       <img src={CategoryImgFour} />
                       <h3 className='pt-5 text-center'>Lifestyle</h3>
                     </div>
@@ -244,10 +258,10 @@ function BlogDetails() {
                       <span>Interior</span>
                       <span>Modern</span>
                     </div>
-                    <div className='flex gap-4 mt-4'>                      
+                    <div className='flex gap-4 mt-4'>
                       <span>Travel</span>
                       <span>Home decor</span>
-                      <span>Fashion</span>                    
+                      <span>Fashion</span>
                     </div>
                   </div>
                 </div>
@@ -261,7 +275,7 @@ function BlogDetails() {
                 <h1 className='uppercase'><span>Related posts</span></h1>
               </div>
 
-              <div className="grid lg:grid-cols-3 gap-6 pt-10 pb-0">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 pb-0">
                 <div className={styles.grid}>
                   <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
                     <img src={PopularImgOne} className='object-fill' />

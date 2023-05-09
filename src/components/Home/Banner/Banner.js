@@ -55,8 +55,8 @@ function Banner() {
 
                     <div className='lg:pl-12 lg:pt-12 lg:pr-12 lg:pb-12 p-10'>
                         <div className='flex gap-3'>
-                            <h3 className='uppercase text-gray'>By Emma </h3>
-                            <h3 className='uppercase text-gray text-center'><span>02 May <br /> 2021</span></h3>
+                            <h3 className='uppercase text-gray'>By Emma</h3>
+                            <h3 className='uppercase text-gray text-center'><span>/&nbsp;&nbsp;02 May <br /> 2021</span></h3>
                         </div>
                         <h2 className='font-serif font-light mt-4 md:text-4xl lg:text-6xl'>
                             Life is a flower of which

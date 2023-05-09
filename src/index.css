@@ -12,10 +12,27 @@
     }
 
     .titleCardView{
-        margin-top: -100px;
+        margin-top: -80px;
     }
 
     .titleCardViewInner{
         width: 300px;
     }
+
+    .hdrAlign{
+        margin: -60px 0 0 0;
+    }
+
+    .imgThumbViewAlign{
+        height: 450px;
+    }
+
+    .blog-header{
+        line-height: 1.67;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
 }
