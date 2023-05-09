@@ -7,7 +7,7 @@
         height: 100vh;
         background-image: url(../../assests/images/banner.svg);
 
-        .logo{
+        .logo {
             width: 150px;
             height: 70px;
 
@@ -17,13 +17,15 @@
             }
         }
 
-        .socialSection{
-            span{
+        .socialSection {
+            span {
                 width: 35px;
                 height: 35px;
+                border-radius: 50%;
+
             }
         }
-        
+
     }
 
     .BannerRight {

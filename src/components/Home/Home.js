@@ -7,6 +7,9 @@ import imgThree from '../../assests/images/img-3.svg';
 import imgFour from '../../assests/images/img-4.svg';
 import imgFive from '../../assests/images/img-5.svg';
 import imgSix from '../../assests/images/img-6.svg';
+import PopularImgOne from '../../assests/images/img-11.svg';
+import PopularImgTwo from '../../assests/images/img-12.svg';
+import PopularImgThree from '../../assests/images/img-13.svg';
 import bannerOne from '../../assests/images/banner-1.svg';
 import bannerTwo from '../../assests/images/banner-2.svg';
 import bannerThree from '../../assests/images/banner-3.svg';
@@ -28,7 +31,7 @@ function Home() {
                     <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
                         <div className={styles.grid}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
-                                <img src={`${process.env.REACT_APP_IMG_URL}/?office&€1`} className='object-fill' />
+                                <img src={PopularImgOne} className='object-fill' />
                             </div>
 
                             <div className='pt-5 pb-5 pl-5 pr-5'>
@@ -44,11 +47,10 @@ function Home() {
 
                         <div className={styles.grid}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
-                                <img src={`${process.env.REACT_APP_IMG_URL}/?office&€2`} className='object-fill' />
+                                <img src={PopularImgTwo} className='object-fill' />
                             </div>
 
                             <div className='pt-5 pb-5 pl-5 pr-5'>
-
                                 <div className={`${styles.gridContent} text-center`}>
                                     <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Travel</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
@@ -60,7 +62,7 @@ function Home() {
 
                         <div className={styles.grid}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
-                                <img src={`${process.env.REACT_APP_IMG_URL}/?office&€3`} className='object-fill' />
+                                <img src={PopularImgThree} className='object-fill' />
                             </div>
 
                             <div className='pt-5 pb-5 pl-5 pr-5'>
