@@ -12,6 +12,7 @@ import searchIcon from '../../assests/images/search.svg';
 import User from '../../assests/images/user.svg';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import Gallery from '../Gallery/Gallery';
+import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
 
 function Home() {
 
@@ -126,8 +127,9 @@ function Home() {
 
                         <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-0 pr-0">
                             <div className={`${styles.grid} col-span-2`}>
-                                <div className={`${styles.gridTopImg}`}>
+                                <div className={`${styles.gridTopImg} flex flex-col relative justify-center items-center`}>
                                     <img src={bannerThree} className='object-fill' />
+                                    <PlayCircleFilledOutlinedIcon className={styles.videoIcon}/>
                                 </div>
 
                                 <div className='pt-5 pb-5 pl-5 pr-5'>
