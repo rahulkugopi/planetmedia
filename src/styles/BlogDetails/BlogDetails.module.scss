@@ -84,7 +84,7 @@
 
             .imgThumbView {
                 width: 100%;
-                height: 450px;
+                height: 100%;
 
                 img {
                     max-width: 100%;
@@ -154,6 +154,360 @@
                     color: #696969;
                 }
             }
+
+            .socialLabel {
+                p {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.49em;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+
+            .socialItems {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .faceBook {
+                background: #3B5998;
+            }
+
+            .twitter {
+                background: #00ACED;
+            }
+
+            .pinterst {
+                background: #E60023;
+            }
+
+            .v {
+                background: #000000;
+            }
+
+            .userView {
+                width: 100%;
+                padding: 40px 40px;
+                background: rgba(164, 188, 150, 0.15);
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                h2 {
+                    font-family: 'PT Serif';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #18171C;
+                }
+
+                h3 {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    color: #424242;
+                }
+
+                p {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 155%;
+                    color: #434343;
+                }
+            }
+
+            .BtnView {
+                width: 100%;
+
+                p {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.125em;
+                    text-transform: uppercase;
+                    color: #545454;
+                }
+
+                h2 {
+                    font-family: 'PT Serif';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 29px;
+                    color: #18171C;
+                }
+            }
         }
+
+        .stories {
+            width: 100%;
+            padding: 85px 0 85px 0;
+            border-bottom: solid 1px #EEEDE9;
+
+            .hdr {
+                position: relative;
+
+                h1 {
+                    display: inline-block;
+
+                    span {
+                        background: rgba(164, 188, 150, 0.27);
+                        padding: 10px 20px;
+                        position: relative;
+                        z-index: 10000000;
+                        border-left: solid 30px #fff;
+                        border-right: solid 30px #fff;
+                        color: #505050;
+                        letter-spacing: 0.13em;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 14px;
+                    }
+
+                    &::after {
+                        left: 0px;
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        top: 14px;
+                        content: " ";
+                        background: #EEEDE9;
+                    }
+                }
+            }
+
+            .grid {
+                .gridTopImg {
+                    width: 100%;
+                    height: 450px;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .gridContent {
+                    width: 100%;
+                    box-sizing: border-box;
+
+                    h3 {
+                        letter-spacing: 0.245em;
+                        text-decoration-line: underline;
+                        font-family: 'Overpass';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 135%;
+                        text-align: center;
+                        letter-spacing: 0.245em;
+                        color: #A4BC96;
+                    }
+
+                    h2 {
+                        line-height: 110%;
+                        margin-top: 11px;
+                        font-family: 'PT Serif';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        text-align: center;
+                        color: #1B1B1B;
+                    }
+
+                    p {
+                        font-family: 'Overpass';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 135%;
+                        text-align: center;
+                        letter-spacing: 0.06em;
+                        text-transform: uppercase;
+                        color: #94939D;
+                    }
+                }
+
+                .btnArea {
+                    width: 100%;
+
+                    .btn {
+                        width: 45px;
+                        height: 45px;
+                        background-color: #E2E2E2;
+                    }
+
+                    .active {
+                        background-color: #A4BC96;
+                        color: #fff;
+                    }
+
+                    .btnLink {
+                        margin: 0 0 0 15px;
+                    }
+                }
+            }
+
+            .subSection {
+                width: 100%;
+
+                .form {
+                    width: 100%;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 60px;
+                        border: 1px solid #B9B9B9;
+                        outline: 0;
+                        padding: 15px;
+                    }
+
+                    .searchIcon {
+                        position: absolute;
+                        right: 15px;
+                        top: 24px;
+                    }
+                }
+
+                .userView {
+                    width: 100%;
+                    padding: 40px 40px;
+                    background: rgba(164, 188, 150, 0.15);
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .rightSide {
+        width: 100%;
+
+        .form {
+            width: 100%;
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 60px;
+                border: 1px solid #B9B9B9;
+                outline: 0;
+                padding: 15px;
+            }
+
+            .searchIcon {
+                position: absolute;
+                right: 15px;
+                top: 24px;
+            }
+        }
+
+        .popularPosts {
+            .SubHeader {
+                width: 100%;
+                padding: 72px 0 0 0;
+
+                h2 {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.19em;
+                    color: #18171C;
+                }
+            }
+
+            .sidePostView {
+                .thumbImage {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                h2 {
+                    font-family: 'PT Serif';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 115%;
+                    color: #000000;
+                }
+
+                p {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 135%;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    color: #979797;
+                }
+            }
+
+        }
+
+        .CategorySection {
+            width: 100%;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            h3 {
+                font-family: 'Overpass';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                letter-spacing: 0.06em;
+                text-transform: capitalize;
+                color: #535353;
+            }
+        }
+
+        .tags {
+            width: 100%;
+
+            span {
+                background: #ECECEC;
+                padding: 10px 20px;
+                font-family: 'Overpass';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 135%;                
+                text-transform: capitalize;
+                color: #535353;
+            }
+        }
+
     }
 }
