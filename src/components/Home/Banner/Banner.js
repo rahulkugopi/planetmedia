@@ -18,7 +18,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className={styles.socialSection}>
-                        <div className=' pt-10 pb-10 pr-10 pl-10 flex gap-3'>
+                        <div className=' pt-10 pb-10 pr-10 pl-10 flex gap-1'>
                             <span className='p-3 bg-white flex justify-center items-center'>
                                 <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.35657 4.52783L5.16576 6.61912H3.71953V12.686H1.54711V6.61912H0.4646V4.52783H1.54711V3.26878C1.54711 1.56791 2.15907 0.552246 3.89861 0.552246H5.34422V2.64353H4.43956C3.76461 2.64353 3.71953 2.93831 3.71953 3.4829V4.52783H5.35657Z" fill="#545454" />

@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '../Header/Header';
-import bannerOne from '../../assests/images/banner-4.svg';
+import Banner from '../../assests/images/banner-4.svg';
 import styles from '../../styles/Blog/Blog.module.scss';
+import Gallery from '../Gallery/Gallery';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 function Blog() {
   return (
@@ -9,17 +11,18 @@ function Blog() {
       <Header />
 
       <div className='pl-10 pr-10'>
-        <img src={bannerOne} />
+        <img src={Banner} />
       </div>
 
       <div className='container mx-auto'>
         <div className={styles.BlogContent}>
-          <div className='text-center bg-white pt-10'>
-            <h2 className='uppercase'>My Blog</h2>
+          <div className='text-center bg-white pt-14'>
+            <div className={styles.header}>
+              <h2 className='uppercase'>My Blog</h2>
+            </div>
           </div>
 
-
-          <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
+          <div className="grid lg:grid-cols-3 gap-6 pt-16 pl-10 pr-10">
             <div className={styles.grid}>
               <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
                 <img src={`${process.env.REACT_APP_IMG_URL}/?office&€1`} className='object-fill' />
@@ -75,15 +78,18 @@ function Blog() {
                 </div>
               </div>
             </div>
-
           </div>
-          
 
-
+          <div className={`${styles.btnArea} flex gap-2 pt-16 pb-20 justify-center`}>
+            <button className={`${styles.btn} ${styles.active}`}>1</button>
+            <button className={`${styles.btn}`}>2</button>
+            <button className={`${styles.btnLink}`}>Next <ArrowForwardIosOutlinedIcon style={{ fontSize: '12px' }} /> </button>
+          </div>
 
         </div>
       </div>
 
+      <Gallery />
 
     </div>
   )

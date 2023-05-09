@@ -51,17 +51,43 @@
             }
 
             .gridContent {
+                width: 100%;
+                box-sizing: border-box;
+
                 h3 {
                     letter-spacing: 0.245em;
                     text-decoration-line: underline;
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 600;
                     font-size: 12px;
                     line-height: 135%;
+                    text-align: center;
+                    letter-spacing: 0.245em;
+                    color: #A4BC96;
                 }
 
                 h2 {
-                    font-size: 24px;
                     line-height: 110%;
                     margin-top: 11px;
+                    font-family: 'PT Serif';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;                  
+                    text-align: center;                    
+                    color: #1B1B1B;
+                }
+
+                p {
+                    font-family: 'Overpass';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 135%;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    text-transform: uppercase;
+                    color: #94939D;
                 }
             }
 
@@ -124,30 +150,9 @@
     .viewSection {
         width: 100%;
         padding: 0px 0 0 0;
-    }
 
-    .imgView {
-        width: 100%;
-        position: relative;
-
-        .imgSection {
-            width: 100%;
-            height: 277px;
-
-            img {
-                max-width: 100%;
-                max-height: 100%;
-            }
+        .stories{
+            border: 0;
         }
-
-        .TitleCard {
-            width: 100%;
-            margin-top: -100px;
-
-            .inner {
-                width: 300px;
-                text-align: center;
-            }
-        }
-    }
+    }    
 }

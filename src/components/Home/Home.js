@@ -1,12 +1,6 @@
 import React from 'react';
 import Banner from './Banner/Banner';
 import styles from '../../styles/Home/Home.module.scss';
-import imgOne from '../../assests/images/img-1.svg';
-import imgTwo from '../../assests/images/img-2.svg';
-import imgThree from '../../assests/images/img-3.svg';
-import imgFour from '../../assests/images/img-4.svg';
-import imgFive from '../../assests/images/img-5.svg';
-import imgSix from '../../assests/images/img-6.svg';
 import PopularImgOne from '../../assests/images/img-11.svg';
 import PopularImgTwo from '../../assests/images/img-12.svg';
 import PopularImgThree from '../../assests/images/img-13.svg';
@@ -16,6 +10,7 @@ import bannerThree from '../../assests/images/banner-3.svg';
 import searchIcon from '../../assests/images/search.svg';
 import User from '../../assests/images/user.svg';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
+import Gallery from '../Gallery/Gallery';
 
 function Home() {
     return (
@@ -28,20 +23,18 @@ function Home() {
                         <h1 className='uppercase'><span>Popular Stories</span></h1>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
+                    <div className="grid lg:grid-cols-3 gap-6 pt-10 pb-0">
                         <div className={styles.grid}>
                             <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
                                 <img src={PopularImgOne} className='object-fill' />
                             </div>
 
-                            <div className='pt-5 pb-5 pl-5 pr-5'>
-
+                            <div className='pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
                                     <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Travel</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
                                     <p className='uppercase mt-5 text-gray'>By Michel jhon / 02 May 2021</p>
                                 </div>
-
                             </div>
                         </div>
 
@@ -50,13 +43,12 @@ function Home() {
                                 <img src={PopularImgTwo} className='object-fill' />
                             </div>
 
-                            <div className='pt-5 pb-5 pl-5 pr-5'>
+                            <div className='pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
-                                    <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Travel</h3>
+                                    <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Fashion</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
                                     <p className='uppercase mt-5 text-gray'>By Michel jhon / 02 May 2021</p>
                                 </div>
-
                             </div>
                         </div>
 
@@ -65,9 +57,9 @@ function Home() {
                                 <img src={PopularImgThree} className='object-fill' />
                             </div>
 
-                            <div className='pt-5 pb-5 pl-5 pr-5'>
+                            <div className='pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
-                                    <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Travel</h3>
+                                    <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Lifestyle</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
                                     <p className='uppercase mt-5 text-gray'>By Michel jhon / 02 May 2021</p>
                                 </div>
@@ -76,10 +68,9 @@ function Home() {
                     </div>
                 </div>
 
-
                 <div className={styles.viewSection}>
                     <div className={`${styles.stories} border-none`}>
-                        <div className="grid lg:grid-cols-3 gap-6 pt-10 pl-10 pr-10">
+                        <div className="grid lg:grid-cols-3 gap-6 pt-0 pl-10 pr-10">
                             <div className={`${styles.grid} col-span-2`}>
                                 <div className={`${styles.gridTopImg}`}>
                                     <img src={bannerOne} className='object-fill' />
@@ -151,39 +142,8 @@ function Home() {
                 </div>
             </div>
 
-            <div className={`${styles.imgView} pt-10 pl-10 pr-10 pb-0`}>
-                <div className="grid lg:grid-cols-6 gap-6">
-                    <div className={styles.imgSection}>
-                        <img src={imgOne} className='object-fill' />
-                    </div>
-
-                    <div className={styles.imgSection}>
-                        <img src={imgTwo} className='object-fill' />
-                    </div>
-
-                    <div className={styles.imgSection}>
-                        <img src={imgThree} className='object-fill' />
-                    </div>
-
-                    <div className={styles.imgSection}>
-                        <img src={imgFour} className='object-fill' />
-                    </div>
-
-                    <div className={styles.imgSection}>
-                        <img src={imgFive} className='object-fill' />
-                    </div>
-
-                    <div className={styles.imgSection}>
-                        <img src={imgSix} className='object-fill' />
-                    </div>
-                </div>
-
-                <div className={`${styles.TitleCard} flex justify-center`}>
-                    <div className={`${styles.inner} shadow p-5 bg-white`}>
-                        <h3> <span className='font-serif font-semibold text-xl'>Follow my instagram</span> <br /> <span>@logoipsum</span></h3>
-                    </div>
-                </div>
-            </div>
+            <Gallery />
+            
         </div>
     )
 }

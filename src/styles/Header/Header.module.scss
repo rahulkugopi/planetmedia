@@ -1,0 +1,19 @@
+.Header {
+    width: 100%;
+
+    .nav {
+        a {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 16px;            
+            text-transform: uppercase;
+            color: #1B1B1B;
+        }
+
+        a.active{
+            color: #859D78;
+        }
+    }
+}
