@@ -11,7 +11,9 @@ function Blog() {
       <Header />
 
       <div className='pl-10 pr-10'>
-        <img src={Banner} />
+        <div className={styles.bannerSection}>
+          <img src={Banner} />
+        </div>
       </div>
 
       <div className='container mx-auto'>

@@ -25,9 +25,12 @@ module.exports = {
         'gray-special': '#606D59',
         'gray-light': '#d3dce6',
         'light-orange': '#dfbfb1',
-        'light-green':'#A4BC96',
-        'extra-color':'#859D78'
-
+        'light-green': '#A4BC96',
+        'extra-color': '#859D78'
+      },
+      height: {
+        'h-450': '450px',
+        'h-277': '277px'
       }
     },
   },

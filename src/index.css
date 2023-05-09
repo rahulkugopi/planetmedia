@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bannerThumb{
+        width: 55%;
+    }
+
+    .bannerSpl{
+        height: 50vh;
+    }
+
+    .titleCardView{
+        margin-top: -100px;
+    }
+
+    .titleCardViewInner{
+        width: 300px;
+    }
+}

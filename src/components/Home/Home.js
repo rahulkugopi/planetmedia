@@ -25,11 +25,11 @@ function Home() {
 
                     <div className="grid lg:grid-cols-3 gap-6 pt-10 pb-0">
                         <div className={styles.grid}>
-                            <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
+                            <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgOne} className='object-fill' />
                             </div>
 
-                            <div className='pt-0 pb-0 pl-5 pr-5'>
+                            <div className='pt-5 lg:pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
                                     <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Travel</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
@@ -39,11 +39,11 @@ function Home() {
                         </div>
 
                         <div className={styles.grid}>
-                            <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
+                            <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgTwo} className='object-fill' />
                             </div>
 
-                            <div className='pt-0 pb-0 pl-5 pr-5'>
+                            <div className='pt-5 lg:pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
                                     <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Fashion</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
@@ -53,11 +53,11 @@ function Home() {
                         </div>
 
                         <div className={styles.grid}>
-                            <div className={`${styles.gridTopImg} flex align-middle justify-center`}>
+                            <div className={`${styles.gridTopImg} flex align-middle justify-center h-h-450`}>
                                 <img src={PopularImgThree} className='object-fill' />
                             </div>
 
-                            <div className='pt-0 pb-0 pl-5 pr-5'>
+                            <div className='pt-5 lg:pt-0 pb-0 pl-5 pr-5'>
                                 <div className={`${styles.gridContent} text-center`}>
                                     <h3 className='text-2xl font-semibold leading-noneindex tracking-tight text-light-green uppercase'>Lifestyle</h3>
                                     <h2 className='font-serif'>Sheets containing Ipsum passages & more</h2>
@@ -71,7 +71,7 @@ function Home() {
                 <div className={styles.viewSection}>
                     <div className={`${styles.stories} border-none`}>
                         <div className="grid lg:grid-cols-3 gap-6 pt-0 pl-10 pr-10">
-                            <div className={`${styles.grid} col-span-2`}>
+                            <div className={`${styles.grid} lg:col-span-2`}>
                                 <div className={`${styles.gridTopImg}`}>
                                     <img src={bannerOne} className='object-fill' />
                                 </div>
@@ -130,7 +130,7 @@ function Home() {
                                     </div>
                                 </div>
 
-                                <div className={`${styles.btnArea} flex gap-2 mt-12`}>
+                                <div className={`${styles.btnArea} flex gap-2 mt-12 lg:justify-normal justify-center`}>
                                     <button className={`${styles.btn} ${styles.active}`}>1</button>
                                     <button className={`${styles.btn}`}>2</button>
                                     <button className={`${styles.btnLink}`}>Next <ArrowForwardIosOutlinedIcon style={{ fontSize: '12px' }} /> </button>
@@ -143,7 +143,7 @@ function Home() {
             </div>
 
             <Gallery />
-            
+
         </div>
     )
 }

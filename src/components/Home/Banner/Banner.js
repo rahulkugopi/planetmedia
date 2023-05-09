@@ -10,14 +10,14 @@ import imgFour from '../../../assests/images/img-10.svg';
 function Banner() {
     return (
         <div data-testid='Banner' className={styles.Banner}>
-            <div className="grid lg:grid-cols-2 gap-0 banner-left">
-                <div className={`${styles.BannerLeft} bg-no-repeat bg-cover flex flex-col justify-between`}>
+            <div className="grid md:grid-col-1 lg:grid-cols-2 gap-0 banner-left">
+                <div className={`${styles.BannerLeft} bg-no-repeat bg-cover flex flex-col justify-between sm:bannerSpl lg:h-screen h-full`}>
                     <div className='w-full pt-10 pb-10 pr-10 pl-10'>
                         <div className={styles.logo}>
                             <img src={whiteLogo} />
                         </div>
                     </div>
-                    <div className={styles.socialSection}>
+                    <div className={`${styles.socialSection}`}>
                         <div className=' pt-10 pb-10 pr-10 pl-10 flex gap-1'>
                             <span className='p-3 bg-white flex justify-center items-center'>
                                 <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ function Banner() {
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.BannerRight}`}>
+                <div className={`${styles.BannerRight} lg:h-screen h-full`}>
                     <div className={styles.topNav}>
                         <div className='pt-8 pb-8 pr-10 pl-10 flex gap-5 justify-end'>
                             <Link to='/' className='uppercase'>Home</Link>
@@ -53,12 +53,12 @@ function Banner() {
                         </div>
                     </div>
 
-                    <div className=' pl-12 pt-12 pr-12 pb-12'>
+                    <div className='lg:pl-12 lg:pt-12 lg:pr-12 lg:pb-12 p-10'>
                         <div className='flex gap-3'>
                             <h3 className='uppercase text-gray'>By Emma </h3>
                             <h3 className='uppercase text-gray text-center'><span>02 May <br /> 2021</span></h3>
                         </div>
-                        <h2 className='font-serif font-light mt-4'>
+                        <h2 className='font-serif font-light mt-4 md:text-4xl lg:text-6xl'>
                             Life is a flower of which
                             love is the honey.
                         </h2>
@@ -75,21 +75,21 @@ function Banner() {
 
                     </div>
 
-                    <div className={`${styles.bottomThumbImg} grid lg:grid-cols-4 gap-0`}>
-                        <div className=''>
-                            <img src={imgOne} className='object-fill' />
+                    <div className={`${styles.bottomThumbImg} grid lg:grid-cols-4 sm:grid-cols-2 gap-0 lg:absolute relative lg:bannerThumb w-full p-10 lg:p-0`}>
+                        <div className='flex justify-center mb-10 sm:mb-0 lg:mb-0 lg:justify-normal'>
+                            <img src={imgOne} className='object-fill w-full lg:w-auto' />
                         </div>
 
-                        <div className=''>
-                            <img src={imgTwo} className='object-fill' />
+                        <div className='flex justify-center mb-10 sm:mb-0 lg:mb-0 lg:justify-normal'>
+                            <img src={imgTwo} className='object-fill w-full lg:w-auto' />
                         </div>
 
-                        <div className=''>
-                            <img src={imgThree} className='object-fill' />
+                        <div className='flex justify-center mb-10 sm:mb-0 lg:mb-0 lg:justify-normal'>
+                            <img src={imgThree} className='object-fill w-full lg:w-auto' />
                         </div>
 
-                        <div className=''>
-                            <img src={imgFour} className='object-fill' />
+                        <div className='flex justify-center mb-10 sm:mb-0 lg:mb-0 lg:justify-normal'>
+                            <img src={imgFour} className='object-fill w-full lg:w-auto' />
                         </div>
                     </div>
                 </div>
